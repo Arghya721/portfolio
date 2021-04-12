@@ -1,0 +1,16 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    section#middle 
+        div.bg-image.d-flex.flex-column.justify-content-center.align-items-center
+            h1 Arghyadeep Ghosh 
+            h2 Full Stack Web Developer from India
+            a.btn-about(href='#') About Me
+

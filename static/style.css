@@ -1,0 +1,148 @@
+*{
+  font-family:"Raleway", sans-serif;
+}
+/* Navbar */
+
+#header{
+  background: #e9e8e6;
+}
+/* Nav Brand "ARGHYA" Starting */
+
+.navbar-brand{
+  color: #222222;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+/* Mid Nav-bar */
+.nav-item a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #888888;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+}
+.active{
+  color: #222222;
+}
+
+/* Mid nav bar Hover Effect */
+a.bar
+{
+  position: relative;
+}
+
+a.bar:before {
+  content: "";
+  position: absolute;
+  background-color: #20c997;
+  border-radius: 3px;
+  width: 0;
+  height: 3px;
+  bottom: 1px;
+  left: 10px;
+  visibility: hidden;
+  transition: all  0.3s ease-in-out;
+  }
+
+a.bar:hover:before {
+  visibility: visible;
+  width: 30%;
+}
+
+/* Social Media */
+.fa {
+  padding: 10px;
+  color: #6f6f6f;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover{
+  color: #0dcaf0;
+  transition: 1s;
+}
+
+/* dropdown menu  */
+.navbar-toggler{
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+.navbar-toggler span{
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background: #6f6f6f;
+}
+.navbar-toggler span + span{
+  margin-top: 4px;
+  width: 22px;
+}
+.navbar-toggler span + span + span{
+  margin-top: 4px;
+  width: 22px;
+}
+
+/* Mid Section */
+#middle h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #222222;
+}
+#middle h2{
+    color: #6f6f6f;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+}
+.btn-about{
+   text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #34b7a7;
+}
+.btn-about:hover{
+  background: #3dc8b7;
+}
+.bg-image{
+  background: url('/static/img/backbg.jpg') top right; 
+  height: 100vh; 
+  background-attachment: fixed;
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  #middle h1 {
+    font-size: 35px;
+  }
+}
+#middle a:hover{
+  color: #fff;
+}
+/* footer */
+#footer{
+  background: #e9e8e6;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
