@@ -6,6 +6,11 @@ head
   // Bootstrap CSS
   link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6' crossorigin='anonymous')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css')
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css')
+
+
   title Arghyadeep's Portfolio
   block scripts
   block style
@@ -20,17 +25,17 @@ body
             div#navbarSupportedContent.collapse.navbar-collapse.justify-content-between
                 ul.navbar-nav.ms-auto.mb-2.mb-lg-0
                     li.nav-item
-                        a.nav-link.active.bar(aria-current='page' href='#')   Home
+                        a.nav-link.bar(aria-current='page' href='/')   Home
                     li.nav-item
-                        a.nav-link.bar(href='#') About
+                        a.nav-link.bar(href='/about') About
                     li.nav-item
-                       a.nav-link.bar(href='#') Resume
+                       a.nav-link.bar(href='/resume') Resume
+                    //- li.nav-item
+                    //-     a.nav-link.bar(href='/service') Service
                     li.nav-item
-                        a.nav-link.bar(href='#') Service
+                        a.nav-link.bar(href='/portfolio') Portfolio 
                     li.nav-item
-                        a.nav-link.bar(href='#') Portfolio 
-                    li.nav-item
-                        a.nav-link.bar(href='#') Contact
+                        a.nav-link.bar(href='/contact') Contact
                 ul.navbar-nav.ms-auto 
                     a.fa.fa-facebook(href='#')
                     a.fa.fa-linkedin(href='#')
@@ -56,3 +61,7 @@ body
 
 
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js' integrity='sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf' crossorigin='anonymous')
+script(src="../static/js/active.js")
+script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+script.
+    AOS.init();

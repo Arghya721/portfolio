@@ -1,0 +1,78 @@
+extends base.pug
+
+block scripts 
+    script(src='https://code.iconify.design/1/1.0.7/iconify.min.js')
+    script(src='https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js')
+    script(type='text/javascript').
+        const lightbox = GLightbox({});
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js')
+    script(src='../static/js/portfolio.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleportfolio.css
+
+block content
+    main#main
+        section#portfolio.portfolio
+            div.container(data-aos="fade-up")
+                div.section-title.d-flex.flex-column.justify-content-center.align-items-center
+                    h2 Portfolio
+                    div.container
+                        p Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                div.row 
+                    div.col-lg-12.d-flex.justify-content-center
+                        ul#portfolio-flters
+                            li.filter-active(data-filter='*') All
+                            li(data-filter='.filter-python') Python
+                            li(data-filter='.filter-iot') IoT
+                            li(data-filter='.filter-web') Web
+                div.row.portfolio-container(data-aos='fade-up' data-aos-delay='200' style='position: relative; height: 4204.73px;')
+                    div.col-lg-4.col-md-6.portfolio-item.filter-app(style='position: absolute; left: 0px; top: 0px;')
+                        div.portfolio-wrap
+                            img.img-fluid(src='../static/img/github-mark.png' alt='')
+                            div.portfolio-info
+                                h4 Github
+                                p View Github
+                                div.portfolio-links
+                                    a.portfolio-lightbox(href='../static/img/github-mark.png' data-gallery='portfolioGallery' title='App 1')
+                                        i.iconify(data-icon="bx-bx-plus")
+                                    a.portfolio-details-lightbox(href='https://github.com/Arghya721' target="_blank" data-glightbox='type: external' title='Portfolio Details')
+                                        i.iconify(data-icon="bx-bx-link")
+                    div.col-lg-4.col-md-6.portfolio-item.filter-python(style='position: absolute; left: 360px; top: 0px;')
+                        div.portfolio-wrap
+                            img.img-fluid(src='../static/img/python.png' alt='')
+                            div.portfolio-info
+                                h4 FaceBook group sharing bot
+                                p Python
+                                div.portfolio-links
+                                    a.portfolio-lightbox(href='../static/img/python.png' data-gallery='portfolioGallery' title='App 1')
+                                        i.iconify(data-icon="bx-bx-plus")
+                                    a.portfolio-details-lightbox(href='https://github.com/Arghya721' target="_blank" data-glightbox='type: external' title='Portfolio Details')
+                                        i.iconify(data-icon="bx-bx-link")
+                    
+                    div.col-lg-4.col-md-6.portfolio-item.filter-iot(style='position: absolute; left: 639.968px; top: 0px;')
+                        div.portfolio-wrap
+                            img.img-fluid(src='../static/img/IOT.png' alt='')
+                            div.portfolio-info
+                                h4 IoT
+                                p View Projects
+                                div.portfolio-links
+                                    a.portfolio-lightbox(href='../static/img/IOT.png' data-gallery='portfolioGallery' title='App 1')
+                                        i.iconify(data-icon="bx-bx-plus")
+                                    a.portfolio-details-lightbox(href='https://github.com/Arghya721' target="_blank" data-glightbox='type: external' title='Portfolio Details')
+                                        i.iconify(data-icon="bx-bx-link")
+                    
+                    div.col-lg-4.col-md-6.portfolio-item.filter-web(style='position: absolute; left: 360px; top: 255.281px;')
+                        div.portfolio-wrap
+                            img.img-fluid(src='../static/img/website.png' alt='')
+                            div.portfolio-info
+                                h4 Portfolio Website
+                                p View Source Code
+                                div.portfolio-links
+                                    a.portfolio-lightbox(href='../static/img/website.png' data-gallery='portfolioGallery' title='App 1')
+                                        i.iconify(data-icon="bx-bx-plus")
+                                    a.portfolio-details-lightbox(href='https://github.com/Arghya721' target="_blank" data-glightbox='type: external' title='Portfolio Details')
+                                        i.iconify(data-icon="bx-bx-link")

@@ -5,6 +5,7 @@
 
 #header{
   background: #e9e8e6;
+  box-shadow: 0px 0px 25px 0 rgb(0 0 0 / 8%);
 }
 /* Nav Brand "ARGHYA" Starting */
 
@@ -55,6 +56,12 @@ a.bar:hover:before {
   visibility: visible;
   width: 30%;
 }
+
+a.bar.active:before{
+  visibility: visible;
+  width: 30%;
+}
+
 
 /* Social Media */
 .fa {
@@ -139,6 +146,10 @@ a.bar:hover:before {
 }
 /* footer */
 #footer{
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
   background: #e9e8e6;
   padding: 30px 0;
   color: #222222;
