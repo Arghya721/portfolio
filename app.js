@@ -8,8 +8,9 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
 const { urlencoded } = require("body-parser");
-mongoose.connect('mongodb+srv://arghya:721507@cluster0.esojt.mongodb.net/portfolioContact?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
-const port = 8000;
+const uri = process.env.MONGODB_URI;
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
+const port = process.env.PORT || 3000;
 var urlencodedParser = bodyparser.urlencoded({ extended: false })
 
 
