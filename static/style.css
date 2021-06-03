@@ -2,6 +2,9 @@
   font-family:"Raleway", sans-serif;
 }
 /* Navbar */
+sub{
+  font-size: 10px;
+}
 
 #header{
   background: #e9e8e6;
@@ -131,7 +134,7 @@ a.bar.active:before{
   background: #3dc8b7;
 }
 .bg-image{
-  background: url('/static/img/backbg.jpg') top right; 
+  background: url('/static/img/backbg.png') top right; 
   height: 100vh; 
   background-attachment: fixed;
 }

@@ -127,6 +127,16 @@ section{
     font-size: 14px;
 }
 
+.facts p a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.facts p a:hover{
+    transition: 1s;
+    color: #34b7a7;
+    text-decoration: underline;
+}
 
 .img-area{
     width: 100px;
