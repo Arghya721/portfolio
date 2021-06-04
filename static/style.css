@@ -112,7 +112,7 @@ a.bar.active:before{
     color: #222222;
 }
 #middle h2{
-    color: #6f6f6f;
+    color: #ffffff;
     margin: 10px 0 0 0;
     font-size: 22px;
 }
@@ -134,7 +134,7 @@ a.bar.active:before{
   background: #3dc8b7;
 }
 .bg-image{
-  background: url('/static/img/backbg.png') top right; 
+  background: url('/static/img/backbg.png') center center no-repeat; 
   height: 100vh; 
   background-attachment: fixed;
 }
